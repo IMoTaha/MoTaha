@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['loggedIn']) || !$_SESSION['loggedIn']) {
-    header('Location: login.php');
+    header('Location: login.html');
     exit;
 }
 ?>
@@ -15,7 +15,7 @@ if (!isset($_SESSION['loggedIn']) || !$_SESSION['loggedIn']) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MoTaha •12Gen Lessons•</title>
-    <link rel="icon" href="icon1.JPG">
+    <link rel="icon" href="icon1.jpg">
     <link rel="stylesheet" href="videos.css">
 </head>
 <body oncontextmenu="return false" onkeydown="preventDefault(event)">
@@ -35,9 +35,9 @@ if (!isset($_SESSION['loggedIn']) || !$_SESSION['loggedIn']) {
         </div>
 
         <nav class="navbar">
-            <a href="home2.html#home" class="active">Home</a>
-            <a href="home2.html#about">About</a>
-            <a href="home2.html#features">Features</a>
+            <a href="index.html#home" class="active">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#features">Features</a>
             <a href="contact.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
             <span class="active-nav"></span>
