@@ -22,24 +22,31 @@ session_start();
       e.preventDefault();
     }
   }
-          // Check if the user is logged in using JavaScript
-        const email = localStorage.getItem('email');
-        const password = localStorage.getItem('password');
+        const form = document.getElementById('login-form');
+        const errorMessage = document.getElementById('error-message');
 
-        if (email && password) {
-            // Redirect to the dashboard based on the email and password
-            if (email === 'z@z' && password === 'z') {
-                window.location.href = 'videos12adv.html';
-            } else if (email === 'w@w' && password === 'w') {
-                window.location.href = 'videos12gen.html';
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Validate the email and password using JavaScript
+            const accounts = {
+                'z@z': 'z',
+                'a@a': 'a',
+                's@s': 's'
+            };
+
+            if (accounts[email] && accounts[email] === password) {
+                // Store the email and password in the localStorage object
+                localStorage.setItem('email', email);
+                localStorage.setItem('password', password);
+                // Redirect to login_handler.html
+                window.location.href = 'login_handler.html';
             } else {
-                // Redirect to the login page if the email and password are not valid
-                window.location.href = 'login.html';
+                errorMessage.textContent = 'Invalid email or password.';
             }
-        } else {
-            // Redirect to the login page if the user is not logged in
-            window.location.href = 'login.html';
-        }
+        });
 </script>
         <!-- header design -->
          <header class="header">
