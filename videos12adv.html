@@ -1,6 +1,6 @@
 <script>
-  const email = localStorage.getItem('email');
-  const password = localStorage.getItem('password');
+  const email = getCookie('email');
+  const password = getCookie('password');
 
   if (!email || !password) {
     window.location.href = 'login.html';
