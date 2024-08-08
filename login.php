@@ -12,7 +12,14 @@ session_start();
     <title>MoTaha •Login•</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-    <body oncontextmenu="return false">
+    <body  oncontextmenu="return false" onkeydown="preventDefault(event)">
+
+<script>
+  function preventDefault(e) {
+    if (e.keyCode === 83 && (e.ctrlKey || e.metaKey)) {
+      e.preventDefault();
+    }
+  }
         <!-- header design -->
          <header class="header">
             <a href="#" class="logo"> MoTaha <span class="animate" style="--i:1;"></span></a>
