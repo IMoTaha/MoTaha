@@ -33,16 +33,18 @@
                 'w@w': 'w'
             };
 
-            if (accounts[email] && accounts[email] === password) {
-                // Store the email and password in the localStorage object
-                localStorage.setItem('email', email);
-                localStorage.setItem('password', password);
-                // Redirect to login_handler.html
-                window.location.href = 'login_handler.html';
-            } else {
-                errorMessage.textContent = 'Invalid email or password.';
-            }
-        });
+    if (accounts[email] && accounts[email] === password) {
+      // Set a cookie to store the login credentials
+      const expires = new Date(Date.now() + 3600000); // 1 hour
+      document.cookie = `email=${email}; expires=${expires.toUTCString()}; path=/`;
+      document.cookie = `password=${password}; expires=${expires.toUTCString()}; path=/`;
+
+      // Redirect to login_handler.html
+      window.location.href = 'login_handler.html';
+    } else {
+      errorMessage.textContent = 'Invalid email or password.';
+    }
+  });
 </script>
         <!-- header design -->
          <header class="header">
