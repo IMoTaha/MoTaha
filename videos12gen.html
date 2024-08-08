@@ -1,11 +1,11 @@
-<?php
+<script>
 session_start();
 
 if (!isset($_SESSION['loggedIn']) || !$_SESSION['loggedIn']) {
     header('Location: login.html');
     exit;
 }
-?>
+</script>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -62,5 +62,6 @@ if (!isset($_SESSION['loggedIn']) || !$_SESSION['loggedIn']) {
         </section>
     </main>
     <script src="videos12gen.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/php.js/1.0.0/php.min.js"></script>
 </body>
 </html>
