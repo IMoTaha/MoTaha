@@ -14,16 +14,16 @@
         if (email && password) {
             // Redirect to the dashboard based on the email and password
             if (email === 'z@z' && password === 'z' || email === 's@s' && password === 's') {
-                window.location.href = 'videos12adv.html';
+                location.replace('videos12adv.html');
             } else if (email === 'w@w' && password === 'w' || email === 'a@a' && password === 'a') {
-                window.location.href = 'videos12gen.html';
+                location.replace('videos12gen.html');
             } else {
                 // Redirect to the login page if the email and password are not valid
-                window.location.href = 'login.html';
+                location.replace('login.html');
             }
         } else {
             // Redirect to the login page if the user is not logged in
-            window.location.href = 'login.html';
+            location.replace('login.html');
         }
     </script>
 </body>
