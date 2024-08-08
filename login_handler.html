@@ -8,6 +8,9 @@
 </head>
 <body>
     <script>
+        const email = localStorage.getItem('email');
+        const password = localStorage.getItem('password');
+
         if (email && password) {
             // Redirect to the dashboard based on the email and password
             if (email === 'z@z' && password === 'z' || email === 's@s' && password === 's') {
