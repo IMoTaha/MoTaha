@@ -4,6 +4,18 @@ Options -Indexes
 # Handle PHP files with .html extension
 AddType application/x-httpd-php .html
 
+# Force PHP files to be executed on the server
+AddHandler application/x-httpd-php .html
+AddHandler application/x-httpd-php .htm
+
+# Prevent PHP files from being downloaded
+<FilesMatch "\.html$">
+  ForceType application/x-httpd-php
+</FilesMatch>
+<FilesMatch "\.htm$">
+  ForceType application/x-httpd-php
+</FilesMatch>
+
 # Rename login_handler.php to login_handler.html
 RewriteEngine on
 RewriteRule ^login_handler\.html$ login_handler.php [L]
