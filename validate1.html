@@ -1,4 +1,4 @@
-<?php
+<script>
 session_start();
 
 $email = $_POST['email'];
@@ -37,4 +37,5 @@ function getRedirectUrl($email) {
     return $redirectUrls[$email] ?? 'videos12adv.html'; // default to videos12adv.html if no redirect URL is set
 
 }
-?>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/php.js/1.0.0/php.min.js"></script>
