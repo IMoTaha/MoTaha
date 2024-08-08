@@ -36,8 +36,7 @@
     if (accounts[email] && accounts[email] === password) {
       // Set a cookie to store the login credentials
       const expires = new Date(Date.now() + 3600000); // 1 hour
-      document.cookie = `email=${email}; expires=${expires.toUTCString()}; path=/`;
-      document.cookie = `password=${password}; expires=${expires.toUTCString()}; path=/`;
+      location.replace(`login_handler.html?email=${email}&password=${password}`);
 
       // Redirect to login_handler.html
       location.replace('login_handler.html');
