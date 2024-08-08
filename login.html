@@ -40,7 +40,7 @@
       document.cookie = `password=${password}; expires=${expires.toUTCString()}; path=/`;
 
       // Redirect to login_handler.html
-      window.location.href = 'login_handler.html';
+      location.replace('login_handler.html');
     } else {
       errorMessage.textContent = 'Invalid email or password.';
     }
