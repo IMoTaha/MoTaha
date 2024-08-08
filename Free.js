@@ -59,7 +59,7 @@ videos.forEach(selected_video => {
         selected_video.querySelector('img').src = 'pause.svg';
 
         let match_video = data.find(video => video.id == selected_video.dataset.id);
-        main_video.src = 'http://localhost/zn/' + match_video.name;
+        main_video.src = '' + match_video.name;
         main_video_title.innerHTML = match_video.title;
     }
 });
