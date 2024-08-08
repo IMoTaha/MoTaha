@@ -1,10 +1,18 @@
 # Disable directory browsing
 Options -Indexes
 
+# Enable compression for better performance
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+</IfModule>
+
 # Handle PHP files with .html extension
 AddType application/x-httpd-php .html
-
-# Force PHP files to be executed on the server
 AddHandler application/x-httpd-php .html
 AddHandler application/x-httpd-php .htm
 
@@ -16,31 +24,20 @@ AddHandler application/x-httpd-php .htm
   ForceType application/x-httpd-php
 </FilesMatch>
 
+# Rewrite rules
+RewriteEngine on
+
 # Rename login_handler.php to login_handler.html
-RewriteEngine on
 RewriteRule ^login_handler\.html$ login_handler.php [L]
-  
+
 # Rename validate1.php to validate1.html
-RewriteEngine on
 RewriteRule ^validate1\.html$ validate1.php [L]
 
 # Rename videos12adv.php to videos12adv.html
-RewriteEngine on
 RewriteRule ^videos12adv\.html$ videos12adv.php [L]
 
 # Rename videos12gen.php to videos12gen.html
-RewriteEngine on
 RewriteRule ^videos12gen\.html$ videos12gen.php [L]
 
 # Rename login.php to login.html
-RewriteEngine on
 RewriteRule ^login\.html$ login.php [L]
-
-# Enable compression for better performance
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE application/javascript
-  AddOutputFilterByType DEFLATE application/rss+xml
-  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
-  AddOutputFilterByType DEFLATE application/x-font
-  AddOutputFilterByType DEFLATE application/x-font-opentype
-  AddOutputFilterByType DEFLATE application/x-font-otf
