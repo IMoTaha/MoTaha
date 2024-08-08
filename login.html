@@ -22,6 +22,24 @@ session_start();
       e.preventDefault();
     }
   }
+          // Check if the user is logged in using JavaScript
+        const email = localStorage.getItem('email');
+        const password = localStorage.getItem('password');
+
+        if (email && password) {
+            // Redirect to the dashboard based on the email and password
+            if (email === 'z@z' && password === 'z') {
+                window.location.href = 'videos12adv.html';
+            } else if (email === 'w@w' && password === 'w') {
+                window.location.href = 'videos12gen.html';
+            } else {
+                // Redirect to the login page if the email and password are not valid
+                window.location.href = 'login.html';
+            }
+        } else {
+            // Redirect to the login page if the user is not logged in
+            window.location.href = 'login.html';
+        }
 </script>
         <!-- header design -->
          <header class="header">
@@ -74,36 +92,6 @@ session_start();
 </section>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/php.js/1.0.0/php.min.js"></script>
 
 </body>
 </html>
-
-<script>
-    const form = document.getElementById('login-form');
-    const errorMessage = document.getElementById('error-message');
-
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-
-        // Send an AJAX request to validate the email and password
-        fetch('validate1.html', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            body: `email=${email}&password=${password}`
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.valid) {
-                // Redirect to login_handler.html
-                window.location.href = 'login_handler.html';
-            } else {
-                errorMessage.textContent = 'Invalid email or password.';
-            }
-        });
-    });
-</script>
