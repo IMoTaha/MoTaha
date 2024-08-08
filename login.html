@@ -18,12 +18,12 @@
     }
   }
         const form = document.getElementById('login-form');
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
         const errorMessage = document.getElementById('error-message');
 
         form.addEventListener('submit', (e) => {
             e.preventDefault();
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
 
             // Validate the email and password using JavaScript
             const accounts = {
@@ -33,11 +33,12 @@
                 'w@w': 'w'
             };
 
-    if (accounts[email] && accounts[email] === password) {
+    if (accounts[email.value] && accounts[email.value] === password.value) {
       // Set a cookie to store the login credentials
-      const expires = new Date(Date.now() + 3600000); // 1 hour
-      location.replace(`login_handler.html?email=${email}&password=${password}`);
-
+      const expires = new Date(Date.now() + 43200000); // 12 hour
+      document.cookie = `email=${email.value};expires=${expires.toUTCString()};path=/`;
+      document.cookie = `password=${password.value};expires=${expires.toUTCString()};path=/`;
+        
       // Redirect to login_handler.html
       location.replace('login_handler.html');
     } else {
