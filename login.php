@@ -78,7 +78,7 @@ session_start();
         const password = document.getElementById('password').value;
 
         // Send an AJAX request to validate the email and password
-        fetch('validate1.html', {
+        fetch('validate1.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
@@ -88,8 +88,8 @@ session_start();
         .then(response => response.json())
         .then(data => {
             if (data.valid) {
-                // Redirect to login_handler.html
-                window.location.href = 'login_handler.html';
+                // Redirect to login_handler.php
+                window.location.href = 'login_handler.php';
             } else {
                 errorMessage.textContent = 'Invalid email or password.';
             }
