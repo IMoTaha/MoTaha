@@ -7,6 +7,6 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn']) {
     header('Location: ' . $redirect);
     exit;
 } else {
-    header('Location: login.html');
+    header('Location: login.php');
     exit;
 }
