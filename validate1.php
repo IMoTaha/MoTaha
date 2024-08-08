@@ -30,11 +30,11 @@ function validateEmailPassword($email, $password) {
 
 function getRedirectUrl($email) {
     $redirectUrls = [
-        'z@z' => 'videos12adv.html',
-        'a@a' => 'videos12gen.html'
+        'z@z' => 'videos12adv.php',
+        'a@a' => 'videos12gen.php'
     ];
 
-    return $redirectUrls[$email] ?? 'videos12adv.html'; // default to videos12adv.php if no redirect URL is set
+    return $redirectUrls[$email] ?? 'videos12adv.php'; // default to videos12adv.php if no redirect URL is set
 
 }
 ?>
