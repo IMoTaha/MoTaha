@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="icon1.JPG">
+    <link rel="stylesheet" href="login.css">
+    <title>MoTaha •Login•</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+    <body oncontextmenu="return false" onkeydown="preventDefault(event)">
+<script>
+  function preventDefault(e) {
+    if (e.keyCode === 83 && (e.ctrlKey || e.metaKey)) {
+      e.preventDefault();
+    }
+  }
+</script>
+        <!-- header design -->
+         <header class="header">
+            <a href="#" class="logo"> MoTaha <span class="animate" style="--i:1;"></span></a>
+            <div class="bx bx-menu" id="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+    
+            <nav class="navbar">
+                <a href="index.html#home" class="active">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#features">Features</a>
+                <a href="contact.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+                <span class="active-nav"></span>
+                <span class="animate" style="--i:2;"></span>
+            </nav>
+         </header>
+
+    <section>
+    <div class="login-box" id="login_box">
+        <form id="login-form">
+            <h2>Login</h2>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" id="email" autocomplete="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" id="password" autocomplete="current-password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox" id="remember-me" name="remember-me">remember me</label>
+            </div>
+            <button type="submit" id="login-btn">Login</button>
+            <p id="error-message"></p>
+            <div class="register-link">
+                <p>Don't have an account?<a href="Register.html">  Register</a></p>
+            </div>
+        </form>
+    </div>
+</section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
