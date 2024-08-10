@@ -247,3 +247,305 @@ button {
 .register-link p a:hover {
     text-decoration: underline;
 }
+
+#error-message {
+    color: var(--main-color);
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+
+    .logo {
+        position: relative;
+        font-size: 2.5rem;
+        color: var(--text-color);
+        font-weight: 600;
+    }
+
+    .navbar a {
+        font-size: 1.7rem;
+        color: var(--text-color);
+        font-weight: 500;
+        margin-left: 3.5rem;
+        transition: .3s;
+        font-size: 18px;
+    }
+
+    .login-box {
+        position: relative;
+        width: 400px;
+        height: 450px;
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(15px);
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .logo {
+        position: relative;
+        font-size: 2.5rem;
+        color: var(--text-color);
+        font-weight: 600;
+    }
+
+    .navbar a {
+        font-size: 1.7rem;
+        color: var(--text-color);
+        font-weight: 500;
+        margin-left: 3.5rem;
+        transition: .3s;
+        font-size: 18px;
+    }
+
+    .login-box {
+        position: relative;
+        width: 400px;
+        height: 450px;
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(15px);
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .logo {
+        position: relative;
+        font-size: 2.5rem;
+        color: var(--text-color);
+        font-weight: 600;
+    }
+
+    .navbar a {
+        font-size: 1.7rem;
+        color: var(--text-color);
+        font-weight: 500;
+        margin-left: 3.5rem;
+        transition: .3s;
+        font-size: 18px;
+    }
+
+    .login-box {
+        position: relative;
+        width: 370px;
+        height: 420px;
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(15px);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .logo {
+        position: relative;
+        font-size: 2.5rem;
+        color: var(--text-color);
+        font-weight: 600;
+    }
+
+    .navbar a {
+        font-size: 1.7rem;
+        color: var(--text-color);
+        font-weight: 500;
+        margin-left: 3.5rem;
+        transition: .3s;
+        font-size: 18px;
+    }
+
+    .login-box {
+        position: relative;
+        width: 400px;
+        height: 450px;
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(15px);
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .logo {
+        position: relative;
+        font-size: 2.5rem;
+        color: var(--text-color);
+        font-weight: 600;
+    }
+
+    .navbar a {
+        font-size: 1.7rem;
+        color: var(--text-color);
+        font-weight: 500;
+        margin-left: 3.5rem;
+        transition: .3s;
+        font-size: 18px;
+    }
+
+    .login-box {
+        position: relative;
+        width: 400px;
+        height: 450px;
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(15px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .logo {
+        position: relative;
+        font-size: 2.5rem;
+        color: var(--text-color);
+        font-weight: 600;
+    }
+
+    .navbar a {
+        font-size: 1.7rem;
+        color: var(--text-color);
+        font-weight: 500;
+        margin-left: 3.5rem;
+        transition: .3s;
+        font-size: 18px;
+    }
+
+    .login-box {
+        position: relative;
+        width: 400px;
+        height: 450px;
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(15px);
+    }
+}
+
+/* Mobile */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .logo {
+        position: relative;
+        font-size: 2.5rem;
+        color: var(--text-color);
+        font-weight: 600;
+    }
+
+    .navbar a {
+        font-size: 1.7rem;
+        color: var(--text-color);
+        font-weight: 500;
+        margin-left: 3.5rem;
+        transition: .3s;
+        font-size: 18px;
+    }
+
+    .login-box {
+        position: relative;
+        width: 400px;
+        height: 450px;
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(15px);
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .logo {
+        position: relative;
+        font-size: 2rem;
+        color: var(--text-color);
+        font-weight: 600;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        color: var(--text-color);
+        font-weight: 500;
+        margin-left: 3.5rem;
+        transition: .3s;
+        font-size: 18px;
+    }
+
+    .login-box {
+        position: relative;
+        width: 350px;
+        height: 400px;
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(15px);
+        margin-top: 40%;
+    }
+}
+
+/* Extra Small Mobile */
+@media only screen and (max-width: 320px) {
+    .logo {
+        position: relative;
+        font-size: 1.7rem;
+        color: var(--text-color);
+        font-weight: 600;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        color: var(--text-color);
+        font-weight: 450;
+        margin-left: 3.7rem;
+        transition: .3s;
+        font-size: 15px;
+    }
+
+    .login-box {
+        position: relative;
+        width: 315px;
+        height: 370px;
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(15px);
+    }
+
+    .input-box {
+        position: relative;
+        width: 300px;
+        margin: 30px 0;
+        border-bottom: 2px solid #fff;
+    }
+    
+    .input-box .icon {
+        position: absolute;
+        right: 8px;
+        color: #fff;
+        font-size: 1.2em;
+        line-height: 57px;
+    }
+}
