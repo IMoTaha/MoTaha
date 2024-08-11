@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoTaha •Contact•</title>
+    <link rel="icon" href="icon1.JPG">
+    <link rel="stylesheet" href="contactt.css">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/ac9c364ceb.js" crossorigin="anonymous"></script>
+</head>
+<body oncontextmenu="return false" onkeydown="preventDefault(event)">
+    <script>
+      function preventDefault(e) {
+        if (e.keyCode === 83 && (e.ctrlKey || e.metaKey)) {
+          e.preventDefault();
+        }
+      }
+    </script>  
+    <!-- header design -->
+     <header class="header">
+        <a href="#" class="logo"> MoTaha <span class="animate" style="--i:1;"></span></a>
+        <div class="bx bx-menu" id="menu-icon"onclick="toggleMenu()">
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html#home" class="active">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#features">Feature</a>
+            <a href="contact.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="UIbtn"><a href="login.html">Log In</a></button>
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:1;"></span>
+        </nav>
+     </header>
+  <div class="az">
+     <div class="dragon">
+        <div class="flip-container">
+            <div class="flipper">
+                <div class="front"></div>
+                    <div class="back">
+                        <h1 class="hh">Mohammed Taha</h1>
+                        <p class="pp">Math Teacher</p>
+                        <div class="icons">
+                            <div class="icon-group">
+                                <span class="bold"><i class="fa-solid fa-phone"></i></span>
+                                <span class="contacts"> +971 56 615 1988</span>
+                                <div class="icon-group">
+                                    <span class="bold"><i class="fa-solid fa-envelope"></i></span>
+                                    <a class="contacts"> 24motaha@gmail.com</a>
+                                </div>
+                                <div class="icon-group">
+                                    <span class="bold"><i class="fa-solid fa-globe"></i></span>
+                                    <a class="contacts"> motaha.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/971566151988" target="_blank" class="icon-box"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://t.me/+971566151988" target="_blank" class="icon-box"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="https://formspree.io/f/mrbzevbe" method="post" class="for">
+            <div class="input-box">
+                <div class="input-field">
+                    <input name="Full_Name" type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input name="Email_Address" type="text" placeholder="Email Address" required>
+                    <span class="focus"> </span>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input name="Mobile_Number" type="number" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input name="Email_Subject" type="text" placeholder="Email Subject" required>
+                    <span class="focus"> </span>
+                </div>
+            </div>
+            
+            <div class="textarea-field">
+                <textarea name="Message" id="" cols="30" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+     </section>
+  </div>
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by MoTaha | All Rights Reserved.</p>
+
+        </div>
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+
+        </div>
+    </footer>
+    <script src="JS.js"></script>
+</body>
+</html>
