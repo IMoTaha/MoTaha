@@ -354,7 +354,6 @@ if (!user) {
 
 // Render video list
 const authenticatedUsers = [
-  { email: 'a@z', password: 'a'},
   { email: 'h@z', password: 'h'},
 ];
 const userData = JSON.parse(user);
