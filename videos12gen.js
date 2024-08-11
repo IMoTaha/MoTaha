@@ -346,23 +346,27 @@ const authenticatedUsers = [
 
 // Check if the user is authenticated
 const user = localStorage.getItem('user');
-if (user) {
-  const userData = JSON.parse(user);
-  const authenticatedUser = authenticatedUsers.find((u) => u.email === userData.email && u.password === userData.password);
-  if (authenticatedUser) {
-    // Render video list
-    authenticatedUser.videos.forEach((video) => {
-      const videoElement = document.createElement('video');
-      videoElement.src = `videos/${video}`;
-      videoElement.controls = true;
-      videoContainer.appendChild(videoElement);
-    });
-  } else {
-    // Redirect to login page if authentication fails
-    window.location.href = 'login.html';
-  }
-} else {
+if (!user) {
   // Redirect to login page if user is not authenticated
   window.location.href = 'login.html';
+  return;
 }
 
+// Render video list
+const authenticatedUsers = [
+  { email: 'a@z', password: 'a'},
+  { email: 'h@z', password: 'h'},
+];
+const userData = JSON.parse(user);
+const authenticatedUser = authenticatedUsers.find((u) => u.email === userData.email && u.password === userData.password);
+if (authenticatedUser) {
+  authenticatedUser.videos.forEach((video) => {
+    const videoElement = document.createElement('video');
+    videoElement.src = `videos/${video}`;
+    videoElement.controls = true;
+    videoContainer.appendChild(videoElement);
+  });
+} else {
+  // Redirect to login page if authentication fails
+  window.location.href = 'login.html';
+}
