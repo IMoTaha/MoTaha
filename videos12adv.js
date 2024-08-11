@@ -278,7 +278,7 @@ let data = [
     {
         'id': 'a31',
         'title': '4.9 معدلات التغير في الاقتصاد والعلوم',
-        'name': '4.9 معدلات التغير في الاقتصاد والعلوم.mp4',
+        'name': 'animated shopping cart.mp4',
         'duration': '3:38',
         'solutionLink': 'solution4_9.pdf',
         'noSolutionLink': 'nosolution4_9.pdf',
@@ -346,7 +346,7 @@ const authenticatedUsers = [
 
 // Check if the user is authenticated
 const user = localStorage.getItem('user');
-if (user) {
+if (!user) {
   const userData = JSON.parse(user);
   const authenticatedUser = authenticatedUsers.find((u) => u.email === userData.email && u.password === userData.password);
   if (authenticatedUser) {
@@ -362,6 +362,6 @@ if (user) {
     window.location.href = 'login.html';
   }
 } else {
-  // Redirect to login page if user is not authenticated
-  window.location.href = 'login.html';
-}
+    // Redirect to login page if user is not authenticated
+    window.location.href = 'login.html';
+  }
