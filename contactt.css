@@ -721,7 +721,6 @@ section:nth-child(odd) .animate.scroll,
         font-size: 1.7rem;
         color: var(--text-color);
         font-weight: 500;
-        margin-left: 3.5rem;
         transition: .3s;
         font-size: 18px;
     }
@@ -739,7 +738,6 @@ section:nth-child(odd) .animate.scroll,
         font-size: 1.7rem;
         color: var(--text-color);
         font-weight: 500;
-        margin-left: 3.5rem;
         transition: .3s;
         font-size: 18px;
     }
@@ -762,7 +760,6 @@ section:nth-child(odd) .animate.scroll,
         font-size: 1.7rem;
         color: var(--text-color);
         font-weight: 500;
-        margin-left: 3.5rem;
         transition: .3s;
         font-size: 18px;
     }
@@ -818,7 +815,6 @@ section:nth-child(odd) .animate.scroll,
         font-size: 1.7rem;
         color: var(--text-color);
         font-weight: 500;
-        margin-left: 3.5rem;
         transition: .3s;
         font-size: 18px;
     }
@@ -838,7 +834,6 @@ section:nth-child(odd) .animate.scroll,
         font-size: 1rem;
         color: var(--text-color);
         font-weight: 500;
-        margin-left: 3.5rem;
         transition: .3s;
         font-size: 18px;
     }
@@ -908,7 +903,6 @@ section:nth-child(odd) .animate.scroll,
         font-size: 1.7rem;
         color: var(--text-color);
         font-weight: 500;
-        margin-left: 3.5rem;
         transition: .3s;
         font-size: 18px;
     }
@@ -927,7 +921,6 @@ section:nth-child(odd) .animate.scroll,
         font-size: 1rem;
         color: var(--text-color);
         font-weight: 500;
-        margin-left: 3.5rem;
         transition: .3s;
         font-size: 18px;
     }
@@ -1062,7 +1055,6 @@ body{
         font-size: 1rem;
         color: var(--text-color);
         font-weight: 500;
-        margin-left: 3.5rem;
         transition: .3s;
         font-size: 18px;
     }
@@ -1196,7 +1188,6 @@ body{
         font-size: 1rem;
         color: var(--text-color);
         font-weight: 450;
-        margin-left: 3.7rem;
         transition: .3s;
         font-size: 15px;
     }
