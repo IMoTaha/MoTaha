@@ -332,9 +332,9 @@ if (!user) {
     });
   } else {
     // Redirect to login page if authentication fails
-    window.location.href = 'login.html';
+    window.location.href = 'https://motaha.net/login';
   }
 } else {
     // Redirect to login page if user is not authenticated
-    window.location.href = 'login.html';
+    window.location.href = 'https://motaha.net/login';
   }
