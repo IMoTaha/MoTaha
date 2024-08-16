@@ -4,8 +4,8 @@ const rememberMeCheckbox = document.getElementById('remember-me');
 
 // Define a simple user database
 const users = [
-  { email: 'a@z', password: 'a', redirect: 'videos12adv.html' },
-  { email: 'h@z', password: 'h', redirect: 'videos12gen.html' }
+  { email: 'a@z', password: 'a', redirect: 'videos12adv' },
+  { email: 'h@z', password: 'h', redirect: 'videos12gen' }
 ];
 
 form.addEventListener('submit', (e) => {
