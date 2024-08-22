@@ -1,7 +1,7 @@
 const main_video = document.getElementById('main-video-container');
 const main_video_title = document.querySelector('.main-video .title');
 const video_playlist = document.querySelector('.video-playlist .videos');
-.
+
 let data = [
     {
         'id': 'a1',
