@@ -152,3 +152,4 @@ document.onkeydown = (e) => {
         e.preventDefault();
     }
 };
+const videoContainer = document.getElementById('video-container');
