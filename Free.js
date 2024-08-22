@@ -5,7 +5,7 @@ const video_playlist = document.querySelector('.video-playlist .videos');
 let data = [
     {
         'id': 'a1',
-        'title': ''1.1 كثيرات الحدود والدوال النسبية',
+        'title': '1.1 كثيرات الحدود والدوال النسبية',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '2:47',
     },
