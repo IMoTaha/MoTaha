@@ -31,11 +31,23 @@ let data = [
 ];
 
 
+data.forEach((video, i) => {
+    let links = '';
+    if (video.powerpointLink) {
+        links += `<a href="${video.powerpointLink}"  class="powerpoint" style="color: var(--main-color);"> (powerpoint) </a>`;
+    }
+    if (video.solutionLink) {
+        links += video.noSolutionLink ? `<a href="${video.solutionLink}" target="_blank" class="solution" style="color: #57FF33;"> (solution) </a> <span> \xa0|\xa0 </span>` : '';
+    }
+    if (video.noSolutionLink) {
+        links += `<a href="${video.noSolutionLink}"  class="no-solution" style="color: #FF5733;"> (NoSolution) </a>`;
+    }
     let video_element = `
       <div class="video" data-id="${video.id}">
         <img src="play.svg" alt="">
         <p>${i + 1 > 9 ? i + 1 : '0' + (i + 1)}. </p>
         <h3 class="title">${video.title}</h3>
+        ${links ? `<p class="links">${links}</p>` : '<p class="links"></p>'}
         <p class="time">${video.duration}</p>
       </div>
     `;
@@ -152,4 +164,3 @@ document.onkeydown = (e) => {
         e.preventDefault();
     }
 };
-const videoContainer = document.getElementById('video-container');
