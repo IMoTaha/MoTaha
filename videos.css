@@ -473,17 +473,7 @@ body {
     }
 }
 
-
-.video .title {
-    margin-bottom: 0.5rem;
-}
-
-.video .time {
-    margin-top: 0.5rem;
-}
-
 .video .links {
-    margin-bottom: -1rem;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
