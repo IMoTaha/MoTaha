@@ -67,7 +67,7 @@
     <!-- contact section design -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="https://formspree.io/f/mrbzevbe" method="post" class="for" id="myForm">
+        <form action="https://formspree.io/f/mrbzevbe" method="post" class="for" id="myForm" autocomplete="off">
             <div class="input-box">
                 <div class="input-field">
                     <input name="Full_Name" type="text" placeholder="Full Name" required>
@@ -111,7 +111,7 @@
     .then(response => response.json())
     .then(data => {
       console.log(data);
-      form.remove();
+      form.reset(); // Clear the form data
     })
     .catch(error => console.error(error));
   });
