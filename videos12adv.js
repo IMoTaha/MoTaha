@@ -5,52 +5,6 @@ const video_playlist = document.querySelector('.video-playlist .videos');
 let data = [
     {
         'id': 'a1',
-        'title': '1.1 كثيرات الحدود والدوال النسبية',
-        'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
-        'duration': '00:00',
-        'solutionLink': '',
-        'noSolutionLink': '',
-        'powerpointLink' : '',
-    },
-    {
-        'id': 'a2',
-        'title': '1.2 الدوال العكسية',
-        'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
-        'duration': '00:00',
-        'solutionLink': '',
-        'noSolutionLink': '',
-        'powerpointLink' : '',
-    },
-    {
-        'id': 'a3',
-        'title': '1.3 الدوال المثلثية والدوال المثلثية العكسية',
-        'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
-        'duration': '00:00',
-        'solutionLink': '',
-        'noSolutionLink': '',
-        'powerpointLink' : '',
-    },
-
-    {
-        'id': 'a4',
-        'title': '1.4 الدوال الأسية واللوغاريتمية',
-        'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
-        'duration': '00:00',
-        'solutionLink': '',
-        'noSolutionLink': '',
-        'powerpointLink' : '',
-    },
-    {
-        'id': 'a5',
-        'title': '1.5 تحويلات الدوال',
-        'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
-        'duration': '00:00',
-        'solutionLink': '',
-        'noSolutionLink': '',
-        'powerpointLink' : '',
-    },
-    {
-        'id': 'a6',
         'title': '2.1 مراجعة موجزة عن التفاضل والتكامل: المماسات وطول المنحنى',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '00:00',
@@ -59,7 +13,7 @@ let data = [
         'powerpointLink' : '',
     },
     {
-        'id': 'a7',
+        'id': 'a2',
         'title': '2.2 مفهوم النهاية',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '00:00',
@@ -69,7 +23,7 @@ let data = [
     },
 
     {
-        'id': 'a8',
+        'id': 'a3',
         'title': '2.3 حساب النهايات',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '00:00',
@@ -78,7 +32,7 @@ let data = [
         'powerpointLink' : '',
     },
     {
-        'id': 'a9',
+        'id': 'a4',
         'title': '2.4 الاتصال ونتائجه',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '00:00',
@@ -87,7 +41,7 @@ let data = [
         'powerpointLink' : '',
     },
     {
-        'id': 'a10',
+        'id': 'a5',
         'title': '2.5 النهايات التي تتضمن اللانهاية: خطوط التقارب',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '00:00',
@@ -96,7 +50,7 @@ let data = [
         'powerpointLink' : '',
     },
     {
-        'id': 'a11',
+        'id': 'a6',
         'title': '3.1 المماسات والسرعة المتجهة',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '00:00',
@@ -105,7 +59,7 @@ let data = [
         'powerpointLink' : '',
     },
     {
-        'id': 'a12',
+        'id': 'a7',
         'title': '3.2 الاشتقاق',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '00:00',
@@ -114,7 +68,7 @@ let data = [
         'powerpointLink' : '',
     },
     {
-        'id': 'a13',
+        'id': 'a8',
         'title': '3.3 حساب المشتقات: قاعدة القوة',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '00:00',
@@ -123,7 +77,7 @@ let data = [
         'powerpointLink' : '',
     },    
     {
-        'id': 'a14',
+        'id': 'a9',
         'title': '3.4 قواعد الضرب والقسمة',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '00:00',
@@ -132,7 +86,7 @@ let data = [
         'powerpointLink' : '',
     },    
     {
-        'id': 'a15',
+        'id': 'a10',
         'title': '3.5 قاعدة السلسلة',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '00:00',
@@ -141,7 +95,7 @@ let data = [
         'powerpointLink' : '',
     },    
     {
-        'id': 'a16',
+        'id': 'a11',
         'title': '3.6 مشتقات الدوال المثلثية',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '00:00',
@@ -150,7 +104,7 @@ let data = [
         'powerpointLink' : '',
     },    
     {
-        'id': 'a17',
+        'id': 'a12',
         'title': '3.7 اشتقاق الدوال الأسية والدوال اللوغاريتمية',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '00:00',
@@ -159,7 +113,7 @@ let data = [
         'powerpointLink' : '',
     },
     {
-        'id': 'a18',
+        'id': 'a13',
         'title': '3.8 الاشتقاق الضمني والدوال المثلثية المعكوسة',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '00:00',
@@ -168,7 +122,7 @@ let data = [
         'powerpointLink' : '',
     },
     {
-        'id': 'a19',
+        'id': 'a14',
         'title': '3.10 نظرية القيمة المتوسطة',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '00:00',
@@ -177,7 +131,7 @@ let data = [
         'powerpointLink' : '',
     },
     {
-        'id': 'a21',
+        'id': 'a15',
         'title': '4.1 التقريبات الخطية وطريقة نيوتن',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '00:00',
@@ -186,7 +140,7 @@ let data = [
         'powerpointLink' : '',
     },
     {
-        'id': 'a22',
+        'id': 'a16',
         'title': '4.2 الصيغ غير المعرفة وقاعدة لوبيتال',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '00:00',
