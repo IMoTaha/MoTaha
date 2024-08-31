@@ -5,28 +5,9 @@ const video_playlist = document.querySelector('.video-playlist .videos');
 let data = [
     {
         'id': 'a1',
-        'title': '1.1 كثيرات الحدود والدوال النسبية',
+        'title': '12Adv - مهارات الوحدة الأولى',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '2:47',
-    },
-    {
-        'id': 'a2',
-        'title': '1.2 الدوال العكسية',
-        'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
-        'duration': '2:45',
-    },
-    {
-        'id': 'a3',
-        'title': '1.3 الدوال المثلثية والدوال المثلثية العكسية',
-        'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
-        'duration': '24:49',
-    },
-
-    {
-        'id': 'a4',
-        'title': '1.4 الدوال الأسية واللوغاريتمية',
-        'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
-        'duration': '3:59',
     },
 ];
 
