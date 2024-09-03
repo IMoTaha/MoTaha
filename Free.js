@@ -5,7 +5,7 @@ const video_playlist = document.querySelector('.video-playlist .videos');
 let data = [
     {
         'id': 'a1',
-        'title': '12Adv - مهارات الوحدة الأولى',
+        'title': '12Adv - أساسيات الوحدة الثانية',
         'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
         'duration': '2:47',
     },
