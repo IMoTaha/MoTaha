@@ -250,9 +250,6 @@ body {
     filter: invert(100%) sepia(100%) saturate(2000%) hue-rotate(360deg);
 }
 
-.video p {
-   margin-left: 2.5rem;
-}
 
 .video h3 {
     width: 23rem;
