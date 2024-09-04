@@ -6,18 +6,37 @@ let data = [
     {
         'id': 'a1',
         'title': '12Adv - أساسيات الوحدة الثانية',
-        'name': '1Bn6WjJCVylub3-EzvAP-KtFSe5I3VEgo',
-        'duration': '0:00',
+        'name': '1nGUzynBFXILnN5gNlBhx06MP3MMThsxO',
+        'duration': '1:30:04',
+        'powerpointLink1' : '11Lz-2Sz5JPLqoLGFgOn2xGODn52P7j4L',
+        'powerpointLink2' : '1Qm062yC48tSHhzOTiHHguTYEZuZnz7T1',
     },
 ];
 
 
 data.forEach((video, i) => {
+        let links = '';
+    if (video.powerpointLink1) {
+        links += `<a href="https://drive.google.com/file/d/${video.powerpointLink1}/view" target="blank"  class="powerpoint" style="color: var(--main-color);"> (powerpoint1)\xa0\xa0 </a>`;
+    }
+    if (video.powerpointLink2) {
+        links += `<a href="https://drive.google.com/file/d/${video.powerpointLink2}/view" target="_blank" class="powerpoint" style="color: var(--main-color);"> (powerpoint2) </a>`;
+    }
+    if (video.powerpointLink) {
+        links += `<a href="https://drive.google.com/file/d/${video.powerpointLink}/view" target="_blank" class="powerpoint" style="color: var(--main-color);"> (powerpoint) </a>`;
+    }
+    if (video.solutionLink) {
+        links += video.noSolutionLink ? `<a href="https://drive.google.com/file/d/${video.solutionLink}/view" target="_blank" class="solution" style="color: #57FF33;"> (solution) </a> <span> \xa0|\xa0 </span>` : '';
+    }
+    if (video.noSolutionLink) {
+        links += `<a href="https://drive.google.com/file/d/${video.noSolutionLink}/view" target="_blank" class="no-solution" style="color: #FF5733;"> (NoSolution) </a>`;
+    }
     let video_element = `
       <div class="video" data-id="${video.id}">
         <img src="play.svg" alt="">
         <p>${i + 1 > 9 ? i + 1 : '0' + (i + 1)}. </p>
         <h3 class="title">${video.title}</h3>
+        ${links ? `<p class="links">${links}</p>` : '<p class="links"></p>'}
         <p class="time">${video.duration}</p>
       </div>
     `;
@@ -52,7 +71,7 @@ videos.forEach(selected_video => {
 let introduction_video = {
     'id': 'introduction',
     'title': 'Introduction',
-    'duration': '00:00',
+    'duration': '00:19',
 };
 
 let introduction_iframe_element = `
