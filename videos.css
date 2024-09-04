@@ -249,7 +249,9 @@ body {
 .video-playlist .videos .video.active img {
     filter: invert(100%) sepia(100%) saturate(2000%) hue-rotate(360deg);
 }
-
+.video p {
+    margin-left: 0.6rem;
+ }
 
 .video h3 {
     width: 23rem;
