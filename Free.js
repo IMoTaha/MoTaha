@@ -17,7 +17,7 @@ let data = [
 data.forEach((video, i) => {
         let links = '';
     if (video.powerpointLink1) {
-        links += `<a href="https://drive.google.com/file/d/${video.powerpointLink1}/view" target="blank"  class="powerpoint" style="color: var(--main-color);"> (powerpoint1)\xa0\xa0 </a>`;
+        links += `<a href="https://drive.google.com/file/d/${video.powerpointLink1}/view" target="_blank"  class="powerpoint" style="color: var(--main-color);"> (powerpoint1)\xa0\xa0 </a>`;
     }
     if (video.powerpointLink2) {
         links += `<a href="https://drive.google.com/file/d/${video.powerpointLink2}/view" target="_blank" class="powerpoint" style="color: var(--main-color);"> (powerpoint2) </a>`;
