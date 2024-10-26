@@ -5,11 +5,55 @@ const video_playlist = document.querySelector('.video-playlist .videos');
 let data = [
     {
         'id': 'a1',
-        'title': '12Adv - أساسيات الوحدة الثانية',
+        'title': 'أساسيات الوحدة الثانية',
         'name': '1nGUzynBFXILnN5gNlBhx06MP3MMThsxO',
         'duration': '1:30:04',
         'powerpointLink1' : '11Lz-2Sz5JPLqoLGFgOn2xGODn52P7j4L',
         'powerpointLink2' : '1Qm062yC48tSHhzOTiHHguTYEZuZnz7T1',
+    },
+    {
+        'id': 'a2',
+        'title': 'شرح ملزمة 2.1-2.2 - جزء 1',
+        'name': '1-BaBiNmxtLcJzIqnPcsahmn3MCX7wWvn',
+        'duration': '\xa010:56\xa0\xa0',
+        'empty': '#',
+    },
+    {
+        'id': 'a3',
+        'title': 'شرح ملزمة 2.1-2.2 - جزء 2',
+        'name': '1LEjPyvtDmnNlRj5EMySLbQpvN9po7oIW',
+        'duration': '\xa0\xa08:03\xa0\xa0',
+        'empty': '#',
+    },
+    {
+        'id': 'a4',
+        'title': 'شرح ملزمة 2.1-2.2 - جزء 3',
+        'name': '14YHIguF1dtJExr-oC1WS8iyK6jCXyO9L',
+        'duration': '\xa0\xa08:42\xa0\xa0',
+        'solutionLink' : '1foXq2QtWVQ6DIsE_CTrGWTumREFNZ9mq',
+        'noSolutionLink' : '1E9_KmM7z4WCAjb-AdkDUujbHeD8m_WdJ',
+    },
+    {
+        'id': 'a5',
+        'title': 'شرح السؤال 1',
+        'name': '1hzw-W8LEFekiFSVgHzeXXG0P_iQ-AVk1',
+        'duration': '\xa0\xa04:41\xa0\xa0',
+        'solutionLink' : '1lNpYDRxUqNPlo18YoHlTKqkdiRSte-iC',
+        'noSolutionLink' : '1I5cdZi64F1-wDulWjlBupPkWa-xYN-Nr',
+    },
+    {
+        'id': 'a6',
+        'title': 'أسئلة الطلبة - جزء 1',
+        'name': '1c8GgTbc2R4Hk0I0JOMkpesAJ6Z8YxW0x',
+        'duration': '\xa0\xa06:43\xa0\xa0',
+        'empty': '#',
+    },
+    {
+        'id': 'a7',
+        'title': 'أسئلة الطلبة - جزء 2',
+        'name': '1Iqi4sfw_ISFuwaAmYM3VAK_apOMv_aAZ',
+        'duration': '\xa0\xa04:57\xa0\xa0',
+        'empty': '#',
     },
 ];
 
@@ -26,10 +70,13 @@ data.forEach((video, i) => {
         links += `<a href="https://drive.google.com/file/d/${video.powerpointLink}/view" target="_blank" class="powerpoint" style="color: var(--main-color);"> (powerpoint) </a>`;
     }
     if (video.solutionLink) {
-        links += video.noSolutionLink ? `<a href="https://drive.google.com/file/d/${video.solutionLink}/view" target="_blank" class="solution" style="color: #57FF33;"> (solution) </a> <span> \xa0|\xa0 </span>` : '';
+        links += video.noSolutionLink ? `<a href="https://drive.google.com/file/d/${video.solutionLink}/view" target="_blank" class="solution" style="color: #57FF33;"> \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0(solution) </a> <span> \xa0|\xa0 </span>` : '';
     }
     if (video.noSolutionLink) {
         links += `<a href="https://drive.google.com/file/d/${video.noSolutionLink}/view" target="_blank" class="no-solution" style="color: #FF5733;"> (NoSolution) </a>`;
+    }
+    if (video.empty) {
+        links += `<a href="#" target="#" class="#" style="color: #FF5733;"> \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 </a>`;
     }
     let video_element = `
       <div class="video" data-id="${video.id}">
