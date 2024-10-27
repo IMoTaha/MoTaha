@@ -122,7 +122,7 @@ let introduction_video = {
 };
 
 let introduction_iframe_element = `
-    <iframe id="introduction" name="introduction" src="intro.mp4" frameborder="0" allowfullscreen allow="autoplay" sandbox="allow-scripts allow-same-origin nodownload"></iframe>
+    <iframe id="introduction" name="introduction" src="introduction.mp4" frameborder="0" allowfullscreen allow="autoplay" sandbox="allow-scripts allow-same-origin nodownload"></iframe>
 `;
 
 main_video.innerHTML = introduction_iframe_element;
